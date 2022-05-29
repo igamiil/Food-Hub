@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/frame"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Home_screen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_height="60dp">
+
+                <ImageButton
+                    android:layout_width="38dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:id="@+id/menu_btn"
+                    android:src="@drawable/menu_icon" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Hi. customer"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:riv_corner_radius="16dp"
+                    android:src="@drawable/profile_icon" />
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:text="What would you like to order"
+                android:textSize="36.5dp"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/sofia_bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="256dp"
+                    android:layout_weight="5"
+                    android:layout_height="51dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableStart="@drawable/search"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:hint="   Find food or restaurant"
+                    android:background="@drawable/edit_search" />
+
+                <ImageButton
+                    android:layout_width="51dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_gravity="right"
+                    android:src="@drawable/list_icon"
+                    android:layout_height="51dp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cat_lst"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:clipToPadding="false"
+                android:padding="10dp"
+                tools:listitem="@layout/categories_item" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:text="Featured restaurants"
+                android:textSize="18dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/semi_bold"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rest_lst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/restaurant_item" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popular_lst"
+                android:layout_marginBottom="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/popular_item" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:layout_height="74dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/explore_icon"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/location_icon"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:onClick="navBar"
+            android:id="@+id/cart_btn"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/shop_icon"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/heart_icon"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:src="@drawable/notfi_icon"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

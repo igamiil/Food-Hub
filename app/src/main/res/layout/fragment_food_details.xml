@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    tools:context=".FoodDetails">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/choice_img"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/choice_img"
+        app:riv_corner_radius="15dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/like_icon" />
+
+    <TextView
+        android:id="@+id/choice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice_img"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/semi_bold"
+        android:text="Ground Beef Tacos"
+        android:textColor="@color/black"
+        android:textSize="31dp" />
+
+    <LinearLayout
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choice_title"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star" />
+
+        <TextView
+            android:id="@+id/rest_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:fontFamily="@font/semi_bold"
+            android:text="4.5"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(25)"
+            android:textSize="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/sofia_regular"
+            android:text="See Review"
+            android:textColor="@color/primary"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/choice_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rate"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/sofia_medium"
+        android:text="9.5"
+        android:textColor="@color/black"
+        android:textSize="31dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rate"
+        android:layout_height="35dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/min_icon"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:fontFamily="@font/semi_bold"
+            android:text="02"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/plus_icon"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/choice_price"
+        android:fontFamily="@font/sofia_regular"
+        android:lineHeight="23dp"
+        android:text="Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh chopped. Spices – chili powder, cumin, onion powder."
+        android:textColor="@color/secondary_txt"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choice_lst"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/semi_bold"
+        android:text="Choice of Add On"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choice_lst"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@+id/add_cart"
+        tools:listitem="@layout/choice_item" />
+
+    <Button
+        android:id="@+id/add_cart"
+        android:layout_width="167dp"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/primary_btn"
+        android:drawableLeft="@drawable/log_icon"
+        android:paddingLeft="7dp"
+        android:text="Add to cart"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

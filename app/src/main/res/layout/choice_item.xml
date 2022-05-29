@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/choice_img"
+        android:layout_width="wrap_content"
+        android:src="@drawable/choice_icon"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Pepper julienned"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/choice_img"
+        android:textSize="14dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/sofia_medium"
+        android:layout_height="wrap_content" />
+
+
+    <RadioButton
+        android:layout_marginRight="10dp"
+        android:text="+$2.50"
+        android:buttonTint="@color/primary"
+        android:textColor="@color/secondary_txt"
+        android:layoutDirection="rtl"
+        android:id="@+id/choice_radio"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

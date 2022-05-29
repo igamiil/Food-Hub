@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="266dp"
+    android:layout_height="225dp"
+    android:layout_marginEnd="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/rest_img"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rest_img"
+        app:riv_corner_radius="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_style"
+        android:layout_height="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="4.5"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:id="@+id/rest_rating"
+            android:fontFamily="@font/semi_bold"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/star"
+            android:layout_weight="1"
+
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="(25)"
+            android:layout_weight="1"
+            android:id="@+id/rating_num"
+            android:textSize="8dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/like_icon" />
+
+    <TextView
+        android:id="@+id/rest_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rest_img"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/semi_bold"
+        android:text="McDonald's"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/rest_name"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/delivery_icon"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="free delivery"
+            android:id="@+id/delivery_cost"
+            android:fontFamily="@font/sofia_regular"
+            android:textSize="12dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/time_icon"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="10-15 mins"
+            android:id="@+id/delivery_time"
+            android:fontFamily="@font/sofia_regular"
+            android:textSize="12dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:gravity="center"
+            android:id="@+id/rest_cat"
+            android:background="@drawable/food_menu_style"
+            android:text="Burger"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/sofia_regular"
+            android:textAllCaps="true"
+
+            android:layout_height="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:gravity="center"
+            android:background="@drawable/food_menu_style"
+            android:text="Chicken"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+
+            android:fontFamily="@font/sofia_regular"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:background="@drawable/food_menu_style"
+            android:text="Fast food"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/sofia_regular"
+            android:layout_height="22dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

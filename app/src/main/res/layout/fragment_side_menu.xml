@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".SideMenu">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/side_profile"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Customer name"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sofia_bold"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Customer@email.com"
+            android:textSize="12dp"
+            android:textColor="@color/secondary_txt"
+            android:fontFamily="@font/sofia_regular"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ordr_icon"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="My Orders"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/mypro_icon"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="My Profile"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:src="@drawable/location_icon"
+                    android:layout_height="23dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Delivery Address"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/wallet"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Payment Methods"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/message"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Contact Us"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/setting"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Settings"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/helps"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Helps &amp; FAQs"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="117dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/primary_btn"
+        android:drawableLeft="@drawable/log_icon"
+        android:fontFamily="@font/sofia_regular"
+        android:paddingLeft="6dp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

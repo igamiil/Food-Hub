@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/signup_bg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".Sign_in">
+
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:text="Login"
+        android:textSize="36.5dp"
+        android:fontFamily="@font/sofia_bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#9796A1"
+        android:text="Full name"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/sofia_regular"
+        android:textSize="16dp"
+        android:layout_height="wrap_content" />
+
+    =
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:inputType="textEmailAddress"
+        android:text="Your email or phone"
+        android:background="@drawable/edit_txt"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#9796A1"
+        android:text="Password"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/sofia_regular"
+        android:textSize="16dp"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:text="password"
+        android:drawableEnd="@drawable/eye"
+        android:background="@drawable/edit_txt"
+        android:layout_height="65dp" />
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/primary"
+        android:text="Forgot Password"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="248dp"
+        android:text="Login"
+        android:id="@+id/login_btn"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/semi_bold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/primary_btn"
+        android:layout_gravity="center"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Don't have an account? Sign up"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/sofia_medium"
+            android:text="Sign in with"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/line_color" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="293dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_style"
+        android:text="                      Google"
+        android:textAlignment="viewStart"
+        android:paddingStart="20dp"
+        android:drawableStart="@drawable/google_icon"
+        android:textAllCaps="false"
+        android:layout_height="54dp" />
+
+
+</LinearLayout>

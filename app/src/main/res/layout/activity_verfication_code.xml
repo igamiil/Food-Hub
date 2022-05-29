@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/signup_bg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Verfication_code">
+
+
+    <TextView
+
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:text="Verification Code"
+        android:textSize="36.5dp"
+        android:fontFamily="@font/sofia_bold"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#9796A1"
+        android:text="Please type the verification code sent toprelookstudio@gmail.com"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="@font/sofia_regular"
+        android:textSize="16dp"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="20dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="25dp"
+            android:inputType="number"
+            android:background="@drawable/edit_txt" />
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="65dp"
+            android:inputType="number"
+            android:background="@drawable/edit_txt" />
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="65dp"
+            android:inputType="number"
+            android:background="@drawable/edit_txt" />
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:inputType="number"
+            android:background="@drawable/edit_txt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:text="I didn't receive a code"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/primary"
+            android:text="Please resend"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
